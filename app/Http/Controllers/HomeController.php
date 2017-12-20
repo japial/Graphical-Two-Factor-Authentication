@@ -110,7 +110,7 @@ class HomeController extends Controller
         return view('auth.changepass', compact('user'));
     } 
 
-    public function passwordChanged()
+    public function passwordChanged(Request $request)
     {
         $user = User::find(Auth::id());
 
@@ -119,11 +119,11 @@ class HomeController extends Controller
            $user->password = bcrypt($request->password);
            $user->save();
 
-           return back()->with('success', 'Password Changed');
+           return back()->with('success', 'Password Changed Successfully');
          }
          else 
          {
-             return back()->with('alert', 'Password Not Changed');
+             return back()->with('alert', 'Password Changing Faild');
          }
     }
 

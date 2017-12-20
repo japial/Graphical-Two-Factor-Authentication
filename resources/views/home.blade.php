@@ -6,7 +6,7 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="{{route('home')}}">GSAS</a>
+          <a href="{{route('home')}}">Two Factor Authentication System</a>
         </li>
         <li class="breadcrumb-item active">User Dashboard</li>
       </ol>
