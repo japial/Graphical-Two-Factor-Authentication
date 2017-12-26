@@ -94,6 +94,7 @@
 <div class="text-center">
   <a class="d-block small mt-3" href="{{route('login')}}">Login Page</a>
   <a class="d-block small" href="{{ route('password.request') }}">Forgot Password?</a>
+  <a class="d-block small" href="{{ url('/') }}">Home</a>
 </div>
 </div>
 </div>

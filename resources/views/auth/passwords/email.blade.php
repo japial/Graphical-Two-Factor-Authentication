@@ -3,7 +3,8 @@
 @section('content')
 <div class="container">
             <div class="card card-register mx-auto mt-1">
-                <div class="card-header">Reset Password</div>
+          
+                <div class="card-header">Reset Password <a class="pull-right" href="{{ url('/') }}">Home</a></div>
 
                 <div class="card-body">
                     @if (session('status'))
